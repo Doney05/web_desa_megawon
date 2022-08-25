@@ -12,7 +12,7 @@ class Kontak extends CI_Controller
     public function index()
     {
         $data['kategori'] = $this->kategori->getAll();
-        $data['title'] = "Kontak";
+        $data['title'] = "Peta Desa";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
         $this->load->view('themes/breadcrumb');

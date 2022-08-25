@@ -32,7 +32,7 @@
         <div class="row nomargin">
             <div class="span4">
                 <div class="logo">
-                    <a href="<?= base_url(); ?>"><img src="<?php echo base_url('public/'); ?>img/logomegawon1.png" alt="" /></a>
+                    <a href="<?= base_url(); ?>"><img style="    margin-top: 6%;" src="<?php echo base_url('public/'); ?>img/logomegawon1.jpeg" alt="" /></a>
                 </div>
             </div>
             <div class="span8">
@@ -48,10 +48,10 @@
                                     <ul class="dropdown-menu">
                                         <li class="dropdown"><a href="#">Profil Desa<i class="icon-angle-right"></i></a>
                                             <ul class="dropdown-menu sub-menu-level1">
-                                                <li><a href="<?php echo base_url('profil/desa'); ?>">Gambaran Umum Desa</a></li>
+                                                <li><a href="<?php echo base_url('profil/desa'); ?>">Kondisi Geografis Desa</a></li>
                                                 <li><a href="<?php echo base_url('profil/sejarah'); ?>">Sejarah Desa</a></li>
                                                 <li><a href="<?php echo base_url('profil/visi_misi'); ?>">Visi dan Misi</a></li>
-                                                <li><a href="<?php echo base_url('profil/PotensiDesa'); ?>">Potensi Desa</a></li>
+                                                <li><a href="<?php echo base_url('profil/PotensiDesa'); ?>">Warisan Budaya Desa</a></li>
                                                 <li><a href="<?php echo base_url('profil/PetaWilayah'); ?>">Peta Wilayah Desa</a></li>
                                             </ul>
                                         </li>
@@ -59,28 +59,11 @@
                                         <li><a href="<?= base_url('profil/bpd'); ?>">BPD</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">Lembaga Desa <i class="icon-angle-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Karang Taruna</a></li>
-                                        <li><a href="#">PKK</a></li>
-                                        <li><a href="#">Majelis Taklim</a></li>
-                                        <li><a href="#">LPMD</a></li>
-                                    </ul>
-                                </li>
                                 <li><a href="<?= base_url('artikel'); ?>">Kabar Desa</a></li>
                                 <li><a href="<?= base_url('penduduk'); ?>">Penduduk </a></li>
 
-                                <li class="dropdown">
-                                    <a href="#">Galeri <i class="icon-angle-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="<?= base_url('galeri/foto'); ?>">Foto</a></li>
-                                        <li><a href="<?= base_url('galeri/video'); ?>">Video</a></li>
-                                    </ul>
-                                </li>
-
                                 <li><a href="<?= base_url('download'); ?>">Download </a></li>
-                                <li><a href="<?= base_url('kontak'); ?>">Kontak </a></li>
+                                <li><a href="<?= base_url('kontak'); ?>">Peta Desa </a></li>
                             </ul>
                         </nav>
                     </div>

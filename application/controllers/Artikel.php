@@ -16,7 +16,7 @@ class Artikel extends CI_Controller
         $artikel = $this->artikel_m;
         $data['kategori'] = $this->kategori->getAll();
         $data['artikel'] = $artikel->getAll();
-        $data['title'] = "Artikel";
+        $data['title'] = "Kabar Desa";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
         $this->load->view('themes/breadcrumb');

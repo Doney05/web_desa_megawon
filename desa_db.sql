@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Oct 16, 2019 at 03:18 AM
--- Server version: 10.3.16-MariaDB
--- PHP Version: 7.3.7
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 25 Agu 2022 pada 05.17
+-- Versi server: 10.4.11-MariaDB
+-- Versi PHP: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -36,16 +35,17 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id`, `nama`, `email`, `password`) VALUES
-(1, 'Kang disman', 'kang@gmail.com', '$2y$10$JS272szBP5GVkNsAnT3JjeHyXAZgyNu8JAxZ1ZzFPN/5rsXG2ODR6');
+(1, 'Kang disman', 'kang@gmail.com', '$2y$10$JS272szBP5GVkNsAnT3JjeHyXAZgyNu8JAxZ1ZzFPN/5rsXG2ODR6'),
+(3, 'Muhamamd Iqbal', 'iqbal@gmail.com', '$2y$10$n/TA9WoQKi6Fv42y7l9b9.GfruZKDLQr6gLJlD3.peGU58j5shIK2');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `artikel`
+-- Struktur dari tabel `artikel`
 --
 
 CREATE TABLE `artikel` (
@@ -60,18 +60,20 @@ CREATE TABLE `artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `artikel`
+-- Dumping data untuk tabel `artikel`
 --
 
 INSERT INTO `artikel` (`id`, `title`, `content`, `image`, `url`, `counter`, `date_created`, `category_id`) VALUES
 (5, 'Mendes Ingin Dana Desa di Nias Untuk Kembangkan Wisata', '<p><b xss=\"removed\">Jakarta</b><span xss=\"removed\"> - Menteri Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi Eko Putro Sandjojo mendorong desa-desa di Nias menggunakan dana desanya untuk pengembangan desa wisata. Pasalnya, lima tahun ke depan dana desa meningkat dari Rp 257 triliun menjadi Rp 400 triliun. Fokusnya akan lebih banyak untuk pengembangan SDM dan pemberdayaan ekonomi.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Tolong dana desanya digunakan untuk membangun desa-desa wisata. Lima tahun ini banyak desa wisata yang pendapatannya puluhan milyar bahkan bayar pajaknya lebih besar dari dana desa yg diterimanya. Saya yakin, tahun depan Nias sudah dapat di atas 1 milyar,\" ujarnya dalam keterangan resmi, Sabtu (14/9/2019).</span></p><p><span xss=\"removed\">Eko melanjutkan, dengan fokus mengembangkan sektor pariwisata, dana desa sebesar satu miliar yang didapat sudah cukup membantu BUMDes mengembangkan sektor pariwisata.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Dengan alam yang bagus di Nias ini, investasi 1 Milyar untuk desa wisata akan kembali dalam 1-2 tahun,\" pungkasnya.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Dalam rangka Sail Nias ini, Kementerian Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi pun ikut serta dalam pameran Wonderful Expo.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Di pameran, kami bawa BUMDes-BUMDes sukses dari seluruh Indonesia, jadi desa-desa di Nias bisa belajar bagaimana mengelola BUMDes,\" jelasnya.</span></p><p><span xss=\"removed\">Ia juga berharap acara sail Nias ini menjadikan Nias dikenal, juga dengan hadirnya duta-duta besar mengikuti rangkaian acara mudahan mendapat dampak positif.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Dengan adanya sail ini berharap bisa mendongkrak perekonomian di Nias khususnya, Sumatera Utara umumnya,\" katanya.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Mendes bersama Menteri Hukum dan Hak Asasi Manusia (Menkumham) Yasona Laoli sebelumnya juga meninjau langsung persiapan event Sail Nias 2019 yang puncaknya dipusatkan di Pelabuhan Teluk Dalam, Nias Selatan, Sumatera Utara.</span></p><p><span xss=\"removed\">sumber : </span><a href=\"https://news.detik.com/berita/d-4706532/mendes-ingin-dana-desa-di-nias-untuk-kembangkan-wisata?_ga=2.201797393.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">news.detik.com</a><br xss=\"removed\"></p>', 'iMac.png', 'Mendes-Ingin-Dana-Desa-di-Nias-Untuk-Kembangkan-Wisata_ID', 0, 1569687764, 23),
 (7, 'Korupsi Dana Desa Rp 287 Juta, Kades di Jombang Dijebloskan ke Penjara', '<p><b xss=\"removed\">Jombang</b><span xss=\"removed\"> - Kepala Desa Dukuhmojo, Mojoagung, Jombang, Prananjaya dijebloskan ke penjara. Dia diduga melakukan korupsi Dana Desa (DD) tahun 2018 dengan membuat proyek fiktif.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Prananjaya diperiksa penyidik Pidana Khusus Kejari Jombang sejak pukul 10.00 WIB. Dalam pemeriksaan perdana ini, dia langsung ditetapkan sebagai tersangka kasus korupsi DD di Desa Dukuhmojo.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Selama ini dia sudah dua kali mengabaikan panggilan penyidik. Prananjaya dijebloskan ke Lapas Kelas II-B Jombang sekitar pukul 16.00 WIB.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Hari ini PJ (Prananjaya) kami tetapkan sebagai tersangka dan kami tahan. Tersangka diduga melakukan penyaluran Dana Desa fiktif,\" kata Kepala Kejari Jombang Syafiruddin kepada wartawan di kantornya, Jalan KH Wahid Hasyim, Selasa (17/9/2019).</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Syafiruddin menjelaskan Prananjaya diduga melakukan korupsi DD untuk Desa Dukuhmojo tahun 2018. Modusnya, tersangka membuat proyek fiktif pembangunan tembok penahan tanah di desa tersebut. Selain itu, terdapat DD sekitar Rp 10 juta yang tidak disalurkan untuk masyarakat.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Nilai kerugian Dana Desa yang dikucurkan sekitar Rp 287 juta. Dana itu tidak digunakan sesuai peruntukannya,\" ungkapnya.</span></p><p><span xss=\"removed\">Untuk menutupi kesalahannya, lanjut Syafiruddin, tersangka membuat laporan pertanggungjawaban penggunaan DD fiktif. Dengan dana Rp 70 juta, tersangka juga membangun tanggul penahan tanah ala kadarnya. Tujuannya untuk mengelabui penyidik seolah-olah proyek Rp 278 juta sudah dikerjakan.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Sudah kami cek ke lapangan, bangunan yang ada dibangun Rp 70 juta untuk merekayasa. Kami cek bangunan dipegang saja hancur karena tidak sesuai speknya,\" terangnya.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Akibat perbuatannya, Prananjaya dijerat dengan Pasal 2 dan 3 UU RI Nomor 20 Tahun 2001 tentang Pemberantasan Tindak Pidana Korupsi. Ancaman hukuman 20 tahun penjara sudah menantinya. Kini Kejari Jombang menyelidiki keterlibatan pihak lain dalam kasus ini.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Masih kami dalami untuk tersangka lain,\" tandas Syafiruddin.</span></p><p>sumber: <a href=\"https://news.detik.com/berita-jawa-timur/d-4710172/korupsi-dana-desa-rp-287-juta-kades-di-jombang-dijebloskan-ke-penjara?_ga=2.198126127.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">news.detik.com</a><span xss=\"removed\"><br></span></p>', 'browsers.png', 'Korupsi-Dana-Desa-Rp-287-Juta-Kades-di-Jombang-Dijebloskan-ke-Penjara_ID', 0, 1569687777, 23),
-(8, 'Bukit Kelam, Wisata Alam Eksotis Sintang yang Simpan Banyak Misteri', '<span xss=\"removed\"><b>Jakarta</b></span><span xss=\"removed\"><b> -</b> </span>Bukit Kelam menjadi objek wisata ikonik di Sintang, Kalimantan Barat. Menariknya, bukit ini bukan dari tanah, melainkan dari batu besar. Dinamakan kelam pun karena batu tersebut berwarna hitam kelam.<p xss=\"removed\">Bukit yang berjarak sekitar 23 km dari pusat Kabupaten Sintang ini bisa ditempuh sekitar 30-40 menit hingga ke kaki bukit. Di sepanjang perjalanan, traveler akan disuguhkan dengan pemandangan alam di kiri dan kanan seperti kebun sawit, pisang, dan karet.</p><p xss=\"removed\">Akses jalan menuju kaki bukit ini terbilang sangat baik dengan dilapisi aspal. Namun, jalanan yang naik turun seperti lewati bukit membuat pengendara mesti hati-hati. Dari cerita yang beredar, konon bukit tersebut dilingkupi berbagai kisah misteri.</p><p xss=\"removed\">Menurut Ketua Adat di Desa Kebong, Kabupaten Sintang, Karen Ayo (76) Bukit Kelam adalah batu yang di angkat oleh pemuda Dayak bernama Bujang Beji.Tujuannya pendekar raksasa ini ingin menutup persimpangan antara Sungai Kapuas dan Melawi.</p><p xss=\"removed\">\"Jadi memang Bujang Beji ini raksasa, karena zaman dulu juga kan ukuran badannya lebih besar dari kita-kira sekarang ini, Jadi niatnya itu ambil batu besar ini buat nutup simpang Sungai Kapuas dan Melawi. Pas dia mau bawa ke sana cuma di perjalanan putus lah talinya, dari ikatan ilalang tadi tuh. Terus jatuh lah di sini, akhirnya jadi bukit kelam,\" ujarnya kepada detikcom, Rabu (28/8/2019).</p><p xss=\"removed\">\"Saat jatuh, Bujang Beji ini mau mengangkat lagi, tapi nggak bisa. Dicongkel bagaimana pun juga nggak bisa. Begitulah cerita orang tua soal bukit kelam ini, \" tambahnya.</p><p xss=\"removed\">Ada juga yang mengatakan bahwa Bukit Kelam adalah meteor yang jatuh ke bumi pada masa lalu. Hal itu juga dimungkinkan karena adanya batu dengan bentuk yang lebih kecil di area sekeliling kaki bukit kelam.</p><p xss=\"removed\">Terlepas dari segala mitos dan kisah misteri, tidak sedikit traveler yang naik ke puncak Bukit Kelam. Dalam perjalanan menuju puncak, traveler akan disuguhi pemandangan indah khas hutan Kalimantan.</p><p xss=\"removed\">Untuk mendaki sampai puncak bagi yang belum terbiasa memerlukan waktu 3-4 jam. Dengan kemiringan sampai 15-40 derajat maka dibuatkan tangga besi untuk mempermudah pendakian.</p><p xss=\"removed\">\"Kalau jalannya dari bawah ke puncaknya, ada jalan setapak semacam tangga. Kekuatan tangganya itu boleh juga lah. Sampai sekarang masih utuh tangganya. Kalau di atas sana itu memang alam rimba lah, sampai sekarang ini masih dilestarikan alamnya,\" ujar Panji, salah seorang warga Desa Kebong, Kecamatan Kelam Permai.</p><p xss=\"removed\">\"Kami sebagai warga bukit kelam ini merasa bangga lah, punya bukit kelam yang berbatu. Katanya terbesar sedunia. Makanya banyak juga turis-turis sedunia yang berkunjung ke sini,\" tambahnya.</p><p xss=\"removed\">Selain itu, di area kaki bukit yang masih dalam kawasan Desa Kebong, terdapat spot foto Instagramable. Bukit Kelam memang salah satu dari bagian cagar budaya milik Kabupaten Sintang. Selain hutan rimba, menurut warga sekitar, terdapat pula sumber mata air yang konon tak pernah habis meski kemarau.</p><p xss=\"removed\">Salah satu pemanfaatannya, air bersih tersebut diambil untuk dijadikan usaha air minum dalam kemasan. Dibantu dengan dana desa, air mineral kemasan ini baru tahun ini berjalan, dibentuk BUMDes untuk dikelola warga sekitar sebagai upaya untuk meningkatkan perekonomian lewat sumber daya alam yang ada.</p><p xss=\"removed\">sumber: <a href=\"https://travel.detik.com/travel-news/d-4704866/bukit-kelam-wisata-alam-eksotis-sintang-yang-simpan-banyak-misteri?_ga=2.168830497.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">travel.detik.com</a></p>', 'screen.png', 'Bukit-Kelam-Wisata-Alam-Eksotis-Sintang-yang-Simpan-Banyak-Misteri_ID', 0, 1569687737, 23);
+(8, 'Bukit Kelam, Wisata Alam Eksotis Sintang yang Simpan Banyak Misteri', '<span xss=\"removed\"><b>Jakarta</b></span><span xss=\"removed\"><b> -</b> </span>Bukit Kelam menjadi objek wisata ikonik di Sintang, Kalimantan Barat. Menariknya, bukit ini bukan dari tanah, melainkan dari batu besar. Dinamakan kelam pun karena batu tersebut berwarna hitam kelam.<p xss=\"removed\">Bukit yang berjarak sekitar 23 km dari pusat Kabupaten Sintang ini bisa ditempuh sekitar 30-40 menit hingga ke kaki bukit. Di sepanjang perjalanan, traveler akan disuguhkan dengan pemandangan alam di kiri dan kanan seperti kebun sawit, pisang, dan karet.</p><p xss=\"removed\">Akses jalan menuju kaki bukit ini terbilang sangat baik dengan dilapisi aspal. Namun, jalanan yang naik turun seperti lewati bukit membuat pengendara mesti hati-hati. Dari cerita yang beredar, konon bukit tersebut dilingkupi berbagai kisah misteri.</p><p xss=\"removed\">Menurut Ketua Adat di Desa Kebong, Kabupaten Sintang, Karen Ayo (76) Bukit Kelam adalah batu yang di angkat oleh pemuda Dayak bernama Bujang Beji.Tujuannya pendekar raksasa ini ingin menutup persimpangan antara Sungai Kapuas dan Melawi.</p><p xss=\"removed\">\"Jadi memang Bujang Beji ini raksasa, karena zaman dulu juga kan ukuran badannya lebih besar dari kita-kira sekarang ini, Jadi niatnya itu ambil batu besar ini buat nutup simpang Sungai Kapuas dan Melawi. Pas dia mau bawa ke sana cuma di perjalanan putus lah talinya, dari ikatan ilalang tadi tuh. Terus jatuh lah di sini, akhirnya jadi bukit kelam,\" ujarnya kepada detikcom, Rabu (28/8/2019).</p><p xss=\"removed\">\"Saat jatuh, Bujang Beji ini mau mengangkat lagi, tapi nggak bisa. Dicongkel bagaimana pun juga nggak bisa. Begitulah cerita orang tua soal bukit kelam ini, \" tambahnya.</p><p xss=\"removed\">Ada juga yang mengatakan bahwa Bukit Kelam adalah meteor yang jatuh ke bumi pada masa lalu. Hal itu juga dimungkinkan karena adanya batu dengan bentuk yang lebih kecil di area sekeliling kaki bukit kelam.</p><p xss=\"removed\">Terlepas dari segala mitos dan kisah misteri, tidak sedikit traveler yang naik ke puncak Bukit Kelam. Dalam perjalanan menuju puncak, traveler akan disuguhi pemandangan indah khas hutan Kalimantan.</p><p xss=\"removed\">Untuk mendaki sampai puncak bagi yang belum terbiasa memerlukan waktu 3-4 jam. Dengan kemiringan sampai 15-40 derajat maka dibuatkan tangga besi untuk mempermudah pendakian.</p><p xss=\"removed\">\"Kalau jalannya dari bawah ke puncaknya, ada jalan setapak semacam tangga. Kekuatan tangganya itu boleh juga lah. Sampai sekarang masih utuh tangganya. Kalau di atas sana itu memang alam rimba lah, sampai sekarang ini masih dilestarikan alamnya,\" ujar Panji, salah seorang warga Desa Kebong, Kecamatan Kelam Permai.</p><p xss=\"removed\">\"Kami sebagai warga bukit kelam ini merasa bangga lah, punya bukit kelam yang berbatu. Katanya terbesar sedunia. Makanya banyak juga turis-turis sedunia yang berkunjung ke sini,\" tambahnya.</p><p xss=\"removed\">Selain itu, di area kaki bukit yang masih dalam kawasan Desa Kebong, terdapat spot foto Instagramable. Bukit Kelam memang salah satu dari bagian cagar budaya milik Kabupaten Sintang. Selain hutan rimba, menurut warga sekitar, terdapat pula sumber mata air yang konon tak pernah habis meski kemarau.</p><p xss=\"removed\">Salah satu pemanfaatannya, air bersih tersebut diambil untuk dijadikan usaha air minum dalam kemasan. Dibantu dengan dana desa, air mineral kemasan ini baru tahun ini berjalan, dibentuk BUMDes untuk dikelola warga sekitar sebagai upaya untuk meningkatkan perekonomian lewat sumber daya alam yang ada.</p><p xss=\"removed\">sumber: <a href=\"https://travel.detik.com/travel-news/d-4704866/bukit-kelam-wisata-alam-eksotis-sintang-yang-simpan-banyak-misteri?_ga=2.168830497.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">travel.detik.com</a></p>', 'screen.png', 'Bukit-Kelam-Wisata-Alam-Eksotis-Sintang-yang-Simpan-Banyak-Misteri_ID', 0, 1569687737, 23),
+(9, 'KKN DI NGEL-NGEL', '<p>KKN DI DESA SEGAWON</p>', '20090729163001prabowo_subianto.jpg', 'KKN-DI-NGEL-NGEL_ID', 0, 1660364094, 21),
+(10, 'Pembuatan website KKN', '<p>Pembuatan wesbiste kkn</p>', 'balbalan_with_pak_kades.jpg', 'Pembuatan-website-KKN_ID', 0, 1660804775, 23);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Struktur dari tabel `category`
 --
 
 CREATE TABLE `category` (
@@ -80,7 +82,7 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `category`
+-- Dumping data untuk tabel `category`
 --
 
 INSERT INTO `category` (`id`, `category`) VALUES
@@ -91,7 +93,7 @@ INSERT INTO `category` (`id`, `category`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `download`
+-- Struktur dari tabel `download`
 --
 
 CREATE TABLE `download` (
@@ -101,7 +103,7 @@ CREATE TABLE `download` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `download`
+-- Dumping data untuk tabel `download`
 --
 
 INSERT INTO `download` (`id`, `title`, `berkas`) VALUES
@@ -110,7 +112,7 @@ INSERT INTO `download` (`id`, `title`, `berkas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galery`
+-- Struktur dari tabel `galery`
 --
 
 CREATE TABLE `galery` (
@@ -122,16 +124,17 @@ CREATE TABLE `galery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `galery`
+-- Dumping data untuk tabel `galery`
 --
 
 INSERT INTO `galery` (`id`, `title`, `keterangan`, `galery`, `date_created`) VALUES
-(2, 'hfv', 'dfbvnx', 'default.jpg', 1570552243);
+(7, 'bal balan', 'bal balan nek lapangan', 'default.jpg', 1661393909),
+(8, 'knkn', 'dklfndkfn', 'default.jpg', 1661394354);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kabardesa`
+-- Struktur dari tabel `kabardesa`
 --
 
 CREATE TABLE `kabardesa` (
@@ -146,7 +149,7 @@ CREATE TABLE `kabardesa` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu`
+-- Struktur dari tabel `menu`
 --
 
 CREATE TABLE `menu` (
@@ -158,7 +161,7 @@ CREATE TABLE `menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `menu`
+-- Dumping data untuk tabel `menu`
 --
 
 INSERT INTO `menu` (`id`, `title`, `url`, `icon`, `is_active`) VALUES
@@ -175,7 +178,7 @@ INSERT INTO `menu` (`id`, `title`, `url`, `icon`, `is_active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `opini`
+-- Struktur dari tabel `opini`
 --
 
 CREATE TABLE `opini` (
@@ -190,7 +193,7 @@ CREATE TABLE `opini` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `penduduk`
+-- Struktur dari tabel `penduduk`
 --
 
 CREATE TABLE `penduduk` (
@@ -205,7 +208,7 @@ CREATE TABLE `penduduk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `penduduk`
+-- Dumping data untuk tabel `penduduk`
 --
 
 INSERT INTO `penduduk` (`nik`, `nama`, `gender`, `usia`, `rt`, `dusun`, `pendidikan`, `pekerjaan`) VALUES
@@ -231,7 +234,7 @@ INSERT INTO `penduduk` (`nik`, `nama`, `gender`, `usia`, `rt`, `dusun`, `pendidi
 -- --------------------------------------------------------
 
 --
--- Table structure for table `profil`
+-- Struktur dari tabel `profil`
 --
 
 CREATE TABLE `profil` (
@@ -242,135 +245,138 @@ CREATE TABLE `profil` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `profil`
+-- Dumping data untuk tabel `profil`
 --
 
 INSERT INTO `profil` (`id`, `judul`, `profil`, `date_created`) VALUES
 (1, 'Profil Desa Bahari', '<h5><b>1. Gambaran Umum Desa</b></h5><p>        Desa Bahari merupakan salah satu desa dalam wilayah Kecamatan Sampolawa Kabupaten Buton Selatan. Secara administratif, wilayah Desa Bahari memiliki batas sebagai berikut :</p><ul><li>Sebelah Utara        : Desa Tira</li><li>Sebelah Selatan    : Laut Flores</li><li>Sebelah Timur       : Desa Bahari Dua</li><li>Sebelah Barat        : Teluk Sampolawa</li></ul><p>        Luas wilayah Desa Bahari adalah 450 Ha yang terdiri dari 7,34 Ha berupa pemukiman, 415 Ha berupa daratan yang digunakan untuk lahan pertanian. Sebagaimana wiayah tropis, Desa Bahari mengalami dua musim yaitu musim kemarau dan musim hujan setiap tahunnya. Rata-rata perbandingan musim hujan lebih kecil dari pada musim kemarau.</p><p>        Jarak pusat desa dengan ibu kota kabupaten yang dapat ditempuh melalui perjalanan darat kurang lebih 40 km. Kondisi prasarana jalan yang berupa jalan aspal dengan kondisi rusak parah mengakibatkan waktu tempuh menggunakan kendaraan bermotor mencapai kurang lebih 100 menit. Sedangkan jarak pusat desa dengan ibu kota kecamatan yang dapat ditempuh melalui perjalanan darat kurang lebih 21 km. Kondisi ruas jalan yang dilalui juga berupa jalan aspal dengan kondisi rusak parah mengakibatkan waktu tempuh menggunakan kendaraan bermotor mencapai kurang lebih 40 menit. Berdasarkan kondisi desa ini maka akan dijabarkan permasalahan, potensi, hingga daftar Rencana Pembangunan Jangka Menengah Desa (RPJM Desa) yang diprogramkan untuk 6 (enam) tahun.</p><p><br></p><h5><b>2. Sejarah Desa</b></h5><p>        Desa Bahari berdiri sejak tahun 1963. Pada awal berdirinya Desa Bahari memiliki wilayah yang cukup luas dan terdiri dari 3 (tiga) dusun yaitu Dusun Wapulaka, Dusun Lagunci, dan Dusun Tira. Namun seiring dengan perkembangan waktu, jumlah penduduk serta kebutuhan akan pelayanan masyarakat maka pada tahun 1979 Desa Bahari dimekarkan menjadi 2 (dua) desa yaitu Desa Bahari yang terdiri dari dua dusun (Dusun Wapulaka dan Dusun Lagunci) dan Desa Tira. Kemudian pada tahun 2011 Desa Bahari kembali dimekarkan menjadi 3 (tiga) desa yaitu Desa Bahari, Desa Bahari Dua, dan Desa Bahari Tiga. Desa Bahari terdiri atas 2 (dua) dusun yaitu Dusun Ngapaompu dan Dusun Wapulaka.</p><p>        Adapun peristiwa-peristiwa penting Desa Bahari dapat digambarkan sebagai berikut :</p><ol><li><b>Tahun 1963 : </b>Terbentuknya Desa Bahari</li><li><b>Tahun 1973 :</b> Pembangunan Balai Desa secara swadaya</li><li><b>Tahun 1976 : </b>Juara II Lomba Desa tingkat Kabupaten Buton</li><li><b>Tahun 1979 : </b>Pemekaran Desa Bahari menjadi dua desa yaitu Desa Bahari dan Desa Tira</li><li><b>Tahun 1981 : </b>Mendapat bantuan jambu mente</li><li><b>Tahun 1982 : </b>Pembangunan sanggar PKK hadiah lomba desa</li><li><b>Tahun 1992 : </b>Dampak dari tsunami Flores mengakibatkan kapal nelayan sebagian rumah penduduk mengalami kerusakan</li><li><b>Tahun 2000 : </b>Renovasi Masjid Nurul Aqidah Desa Bahari secara swadaya</li><li><b>Tahun 2001 : </b>Pembangunan Rumah Jabatan Kepala Desa</li><li><b>Tahun 2004 : </b>Mendapat bantuan pembangunan talud pemecah ombak dari PPK</li><li><b>Tahun 2005 : </b>Pembangunan talud pemecah ombak dari dana kompensasi pengurangan subsidi BBM dan menerima bantuan mesin 3 unit</li><li><b>Tahun 2006 : </b>Juara I lomba desa tingkat provinsi Sulawesi Tenggara</li><li><b>Tahun 2009 : </b>Pembangunan gedung SDN 1 Bahari dari Dana PNPM-MP dan penanaman pohon sengon dari dana PNPM-MP</li><li><b>Tahun 2010 : </b>Pengadaan jaringan listrik dan Genset dari dana PNPM-MP</li><li><b>Tahun 2011 : </b>Pemekaran Desa Bahari menjadi tiga desa yaitu Desa Bahari, Desa Bahari Dua, dan Desa Bahari Tiga</li><li><b>Tahun 2013 : </b>Penambahan tiga RKB Gedung MTs Bahari</li><li><b>Tahun 2014 : </b>Peningkatan jalan rabat beton dan gorong-gorong oleh program PNPM-MP</li></ol>', 1566964829),
 (2, 'Profil Pemerintah Desa Bahari', 'test', 1568875859),
-(3, 'Profil BPD (Badan Permusyawaratan Desa)', '<p>Ini adalah profil BPD (Badan Permusyawaratan Desa) Desa Bahari kec sampolawa.</p><p>Adapun susunan pengurusnya adalah sebagai berikut:</p><ol><li>Ketua : La Dimi K., S.Pd.</li><li>Wakil Ketua : Amrida G. S.Pd.</li><li>Sekretaris : Lisdiwanti, S.Pd.</li><li>Anggota : Wa Ode Ampiana, S.Pd.</li><li>Anggota : La Soni, S.Pd.</li></ol>', 1568856500);
+(3, 'Profil BPD (Badan Permusyawaratan Desa)', '<p>Ini adalah profil BPD (Badan Permusyawaratan Desa) Desa Bahari kec sampolawa.</p><p>Adapun susunan pengurusnya adalah sebagai berikut:</p><ol><li>Ketua : La Dimi K., S.Pd.</li><li>Wakil Ketua : Amrida G. S.Pd.</li><li>Sekretaris : Lisdiwanti, S.Pd.</li><li>Anggota : Wa Ode Ampiana, S.Pd.</li><li>Anggota : La Soni, S.Pd.</li></ol>', 1568856500),
+(4, 'Sejarah Desa', '<p></p><h5 xss=\"removed\"><span xss=\"removed\"><b>1. Sejarah Desa Megawon</b></span></h5>\r\n\r\n<p class=\"MsoNormal\" xss=\"removed\">    <span lang=\"IN\" xss=\"removed\">Istilah Megawon berasal\r\ndari bahasa Sansekerta, yaitu mega dan won. Mega berarti sesuatu yang sangat\r\nagung, sesuatu yang memiliki nilai tinggi, dan sesuatu yang memiliki makna\r\nmegah. Dalam perspektif kosmologi mega juga merupakan bagian penting dari alam\r\nyang memayungi dan memberi kesejukan pada dunia. Sementara kata won berfungsi\r\nuntuk memperhalus bahasa. Sehingga istilah megawon dapat diartikan sebagai\r\nsuatu daerah yang memiliki makna tinggi dan sangat megah serta agung, yaitu\r\nsuatu perdikan yang memiliki makna tinggi, memberikan kemajuan dan pengharapan\r\nhidup, memberikan keberkahan, serta memberikan kesejukan kepada penduduk yang\r\nmendiaminya. Apabila diteliti lebih dalam, istilah Megawon yang kemudian\r\nmenjadi nama sebuah desa di Kudus, sesungguhnya dapat dihubungkan dengan\r\nistilah Al-Quds (baca : suci) sebagai asal kata untuk nama kota Kudus. Hal ini\r\nmengandung maksud bahwa Megawon sebagai nama suatu desa yang memiliki nilai\r\ntinggi merupakan bagian tak terpisahkan dari kota Kudus yang suci.<o></o></span></p>\r\n\r\n    <span lang=\"IN\" xss=\"removed\">Berdasarkan data sejarah, perdikan Megawon sudah\r\ndidiami dan sudah menjadi perkampungan masyarakat Hindu dan Budha sejak abad\r\nke-8 sampai abad ke-10 M. Hal ini dikuatkan dengan ditemukannya Situs Candi\r\nBacin di Desa Dersalam, yaitu </span><p></p>', 1661227301),
+(5, 'Visi Misi Desa Megawon', '<p><b>VISI</b></p><p>Megawon Yang Asri, Religius, Tentram, Menuju Masyarakat Yang Maju, Sejahtera dan Berbudaya</p><p><b>MISI</b></p><p>1. Mewujudkan masyarakat yang religius, berbudaya dan berkeadilan sosial.</p><p>2. Mewujudkan tata kelola pemerintahan yang baik (good governance) untuk meningkatkan pelayanan publik.</p><p>3. Pembangunan infrastruktur yang berkelanjutan dan berwawasan lingkungan.</p><p>4. Meningkatkan kapasitas sumberdaya manusia yang handal dan berkarakter baik.</p><p></p><p>5. Memperkuat ekonomi kerakyatan yang kreatif, berdaya saing tinggi dan berbasis kearifan lokal. </p><div><br></div><p></p><p><br></p>', 1661228674),
+(6, 'Potensi Desa', '<h1><b>DAFTAR POTENSI DESA MEGAWON</b></h1><table class=\"table table-bordered\"><tbody><tr><td><b>No</b></td><td><b>Potensi</b></td><td><b>Lokasi</b></td><td><b>Keterangan</b></td></tr><tr><td><b>1</b></td><td><b>2</b></td><td><b>3</b></td><td><b>4</b></td></tr><tr><td><b>A</b></td><td><b>POTENSI SUMBER DAYA MANUSIA</b></td><td><br></td><td><br></td></tr><tr><td>1</td><td>Tukang Batu</td><td>Krajan Rt. 01/01</td><td>4 Orang</td></tr></tbody></table><p><br></p>', 1661321335);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `artikel`
+-- Indeks untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `category`
+-- Indeks untuk tabel `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `download`
+-- Indeks untuk tabel `download`
 --
 ALTER TABLE `download`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `galery`
+-- Indeks untuk tabel `galery`
 --
 ALTER TABLE `galery`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `kabardesa`
+-- Indeks untuk tabel `kabardesa`
 --
 ALTER TABLE `kabardesa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `menu`
+-- Indeks untuk tabel `menu`
 --
 ALTER TABLE `menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `opini`
+-- Indeks untuk tabel `opini`
 --
 ALTER TABLE `opini`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `penduduk`
+-- Indeks untuk tabel `penduduk`
 --
 ALTER TABLE `penduduk`
   ADD PRIMARY KEY (`nik`);
 
 --
--- Indexes for table `profil`
+-- Indeks untuk tabel `profil`
 --
 ALTER TABLE `profil`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `artikel`
+-- AUTO_INCREMENT untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `category`
+-- AUTO_INCREMENT untuk tabel `category`
 --
 ALTER TABLE `category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT for table `download`
+-- AUTO_INCREMENT untuk tabel `download`
 --
 ALTER TABLE `download`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table `galery`
+-- AUTO_INCREMENT untuk tabel `galery`
 --
 ALTER TABLE `galery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `kabardesa`
+-- AUTO_INCREMENT untuk tabel `kabardesa`
 --
 ALTER TABLE `kabardesa`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `menu`
+-- AUTO_INCREMENT untuk tabel `menu`
 --
 ALTER TABLE `menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
--- AUTO_INCREMENT for table `opini`
+-- AUTO_INCREMENT untuk tabel `opini`
 --
 ALTER TABLE `opini`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `profil`
+-- AUTO_INCREMENT untuk tabel `profil`
 --
 ALTER TABLE `profil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

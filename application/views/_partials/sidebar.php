@@ -1,5 +1,6 @@
 <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
-    <h1 class="hidden-sm hidden-xs">Navigation</h1>
+    <h1 class="hidden-sm hidden-xs"><img style="    width: 100%;
+    margin-top: -6%;" src="<?php echo base_url('public/'); ?>img/logomegawon1.png" alt="" /></h1>
     <ul>
         <?php foreach ($menu as $row) : ?>
             <?php if ($title == $row['title']) : ?>
@@ -25,7 +26,7 @@
                 <li><a href="<?= base_url('admin/profil/bpd'); ?>">Profil BPD</a></li>
                 <li><a href="<?= base_url('admin/profil/sejarah'); ?>">Sejarah Desa</a></li>
                 <li><a href="<?= base_url('admin/profil/visi_misi'); ?>">Visi Misi</a></li>
-                <li><a href="<?= base_url('admin/profil/potensi_desa'); ?>">Potensi Desa</a></li>
+                <li><a href="<?= base_url('admin/profil/potensi_desa'); ?>">Warisan Budaya Desa</a></li>
             </ul>
         </li>
 

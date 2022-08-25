@@ -1,7 +1,7 @@
 <div class="row">
     <footer class="clearfix" id="admin-footer">
         <div class="pull-left"><b>Copyright </b>&copy; <?= date('Y'); ?></div>
-        <div class="pull-right">Desa Bahari</div>
+        <div class="pull-right">Desa Megawon</div>
     </footer>
 </div>
 </div>

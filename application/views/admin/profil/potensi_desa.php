@@ -1,6 +1,6 @@
 <div id="content">
     <header class="clearfix">
-        <h2 class="page_title pull-left">Potensi Desa</h2>
+        <h2 class="page_title pull-left">Warisan Budaya Desa Megawon</h2>
         <?php foreach ($PotensiDesa as $row) : ?>
             <a href="<?= base_url('admin/profil/updatePotensiDesa/' . $row['id']); ?>" class="btn btn-primary btn-xs pull-right"><b>Update</b></a>
         </header>
@@ -11,7 +11,7 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Potensi Desa</th>
+                        <th>Warisan Budaya Desa Megawon</th>
                     </tr>
                 </thead>
                 <tbody>

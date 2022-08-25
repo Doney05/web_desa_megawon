@@ -27,7 +27,7 @@ class Home extends CI_Controller
         $this->load->view('themes/kabar-terkini', $data);
         $this->load->view('themes/struktur-organisasi');
         $this->load->view('themes/jumlah-penduduk');
-        $this->load->view('themes/testimoni');
+        // $this->load->view('themes/testimoni');
         $this->load->view('themes/recent-artikel');
         $this->load->view('themes/footer');
     }

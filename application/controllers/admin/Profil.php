@@ -208,7 +208,7 @@ class Profil extends CI_Controller
         $profil = $this->profil_m;
         $data['menu'] = $menu->getAll();
         $data['PotensiDesa'] = $profil->getPotensiDesa();
-        $data['title'] = "Profil";
+        $data['title'] = "Warisan Budaya Desa";
 
         $this->load->view('_partials/header', $data);
         $this->load->view('_partials/sidebar', $data);

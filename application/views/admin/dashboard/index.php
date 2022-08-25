@@ -7,19 +7,11 @@
 
 <div id="dashboard-con">
     <div class="col-md-12">
-        <div class="charts">
-            <canvas id="chartPenduduk"></canvas>
-        </div>
-        <div class="charts">
-            <canvas id="chartKriminal"></canvas>
-        </div>
-        <div class="charts">
-            <canvas id="chartPenghasilan"></canvas>
-        </div>
+       <h1>Selamat Datang Di Desa Megawon</h1>
     </div>
 
 
-
+<!-- 
     <div class="row">
         <div class="col-md-6 dashboard-left-cell">
             <div class="admin-content-con">
@@ -94,8 +86,8 @@
                     <a href="#" class="pull-right text-link">view all article</a>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+<!-- 
         <div class="col-md-6 dashboard-right-cell">
             <div class="admin-content-con">
                 <header>
@@ -126,5 +118,5 @@
                     <a href="#" class="pull-right text-link">view all comments</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>

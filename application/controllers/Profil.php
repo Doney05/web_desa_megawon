@@ -81,7 +81,7 @@ class Profil extends CI_Controller
         $profil = $this->profil_m;
         $data['kategori'] = $kategori->getAll();
         $data['PotensiDesa'] = $profil->getPotensiDesa();
-        $data['title'] = "Potensi Desa Bahari";
+        $data['title'] = "Warisan Budaya Desa Megawon";
 
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);

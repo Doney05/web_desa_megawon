@@ -3,43 +3,18 @@
         <div class="row">
             <div class="span4">
                 <div class="widget">
-                    <h5 class="widgetheading">Kategori</h5>
-                    <?php foreach ($kategori as $row) : ?>
-                        <ul class="link-list">
-                            <li><a href="#"><?= $row['category']; ?></a></li>
-                        </ul>
-                    <?php endforeach; ?>
-
-                </div>
-            </div>
-            <div class="span4">
-                <div class="widget">
                     <h5 class="widgetheading">Alamat</h5>
                     <address>
-                        <strong>Kantor Desa Bahari</strong><br>
-                        Jl. Pantai Bahari, Desa Bahari, Kecamatan Sampolawa,<br>
-                        Kabupaten Buton Selatan. Kode Pos 93753. Indonesia
+                        <strong>Kantor Desa Megawon</strong><br>
+                        Jl. Mejobo No. 205, Megawon, Kec. Jati, Kabupaten Kudus, Jawa Tengah 59342
                     </address>
                     <p>
-                        <i class="icon-phone"></i> 0852-9262-6598 <br>
+                        <i class="icon-phone"></i> 085641953492 <br>
                         <i class="icon-envelope-alt"></i> desabahari@gmail.com
                     </p>
                 </div>
             </div>
-            <div class="span4">
-                <div class="widget">
-                    <h5 class="widgetheading">Testimonial</h5>
-                    <p>
-                        Silahkan posting testimoni Anda disini
-                    </p>
-                    <form class="subscribe">
-                        <div class="input-append">
-                            <input class="span2" id="appendedInputButton" type="text" placeholder="Testimoni...">
-                            <button class="btn btn-theme" type="submit">Posting</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+           
         </div>
     </div>
     <div id="sub-footer">
@@ -47,7 +22,7 @@
             <div class="row">
                 <div class="span6">
                     <div class="copyright">
-                        <p><span>&copy; Copyright <?= date('Y'); ?>. Desa Bahari</span></p>
+                        <p><span>&copy; Copyright <?= date('Y'); ?>. Desa Megawon</span></p>
                     </div>
                 </div>
             </div>
